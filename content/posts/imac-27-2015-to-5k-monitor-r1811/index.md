@@ -91,7 +91,8 @@ Prices all-in. Shipping from China was free.
 | [Stonetaskin R1811 V4 driver board, Package B](https://stonetaskin.com/products/diy-5k-universal-r1811-v-4-driver-board-usb-c-freesync-edp-dp1-4-compatible-for-imac-lm270qq1-lm270qq2-screen-external-monitor-1) (board, control strip, IR remote, 24 V 5 A supply, cables) | $298.00 |
 | [DZ-LP0818 50 W constant current board](https://stonetaskin.com/products/high-quality-diy-universal-driver-board-50w-current-board-dz-lp0818-resolve-the-panel-brightness-problem-lm270qq1-lm270qq2-1?variant=45363844120730) | $36.30 |
 | Barrel splitter, 24 V to 12 V step-down converter, JST connector kit (Amazon.es) | about 25 € |
-| Noctua NA-FC1 fan controller and NA-RC7 adaptors | already owned |
+| Two 180 ohm 2 A resistors for the R1811 fan | 0.50 € |
+| Noctua NA-FC1 fan controller | already owned |
 
 Call it 450 euros for a 5K display. A new 5K monitor starts at four times that.
 
@@ -183,9 +184,9 @@ Using the Spyder5 was a pain because it is no longer supported and the software 
 
 ## Quieting the R1811 fan
 
-To cut the fan noise I added resistance to drop its voltage. I had two [Noctua NA-RC7 Low-Noise Adaptors](https://noctua.at/en/na-src7) and connected them in series with the fan using JST XH-2P connectors from [this kit](https://www.amazon.es/dp/B0CKSJPVZF). I need JSTs for another project, so this was practice. I have fat fingers and bad eyes.
+To cut the fan noise I added resistance to drop its voltage. First with two [Noctua NA-RC7 Low-Noise Adaptors](https://noctua.at/en/na-src7) I had lying around, connected in series with the fan using JST XH-2P connectors from [this kit](https://www.amazon.es/dp/B0CKSJPVZF). That is what the photo shows. I later replaced the Noctua adaptors with two 180 ohm 2 A resistors, 25 cents each, wired the same way. I need JSTs for another project, so this was practice. I have fat fingers and bad eyes.
 
-{{< figure src="img/board-fan-resistors.jpg" alt="The R1811 board fan with two Noctua low-noise adaptors spliced in using JST connectors" caption="R1811 fan with the resistors spliced in. Yellow and red are positive, black is ground." >}}
+{{< figure src="img/board-fan-resistors.jpg" alt="The R1811 board fan with two Noctua low-noise adaptors spliced in using JST connectors" caption="R1811 fan with the Noctua adaptors spliced in; the 180 ohm resistors went in the same place later. Yellow and red are positive, black is ground." >}}
 
 The fan is now nearly silent.
 
@@ -229,6 +230,6 @@ A dead 27-inch 5K iMac is a 120 euro panel with a free case, and for about 330 d
 - [@Kaeslin's R9A18 project (#1409)](https://forums.macrumors.com/threads/diy-5k-monitor-success.2253100/page-57#post-32247683)
 - [iFixit logic board replacement guide](https://www.ifixit.com/Guide/iMac+Intel+27-Inch+Retina+5K+Display+Logic+Board+Replacement/30529)
 - [Stonetaskin](https://stonetaskin.com), the board vendor
-- [Noctua NA-FC1](https://noctua.at/en/na-fc1) fan controller and [NA-RC7](https://noctua.at/en/na-src7) low-noise adaptors
+- [Noctua NA-FC1](https://noctua.at/en/na-fc1) fan controller
 - [Ugreen USB-C to DisplayPort 1.4 cable](https://www.ugreen.com/products/usb-c-to-displayport-8k-cable), tested by many in the thread
 - The original write-up: [kurtshuler/imac-5k-monitor-conversion](https://github.com/kurtshuler/imac-5k-monitor-conversion) on GitHub

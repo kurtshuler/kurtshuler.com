@@ -91,7 +91,8 @@ Precios finales. El envío desde China fue gratis.
 | [Placa controladora Stonetaskin R1811 V4, pack B](https://stonetaskin.com/products/diy-5k-universal-r1811-v-4-driver-board-usb-c-freesync-edp-dp1-4-compatible-for-imac-lm270qq1-lm270qq2-screen-external-monitor-1) (placa, botonera, mando IR, fuente de 24 V 5 A, cables) | 298,00 $ |
 | [Placa de corriente constante DZ-LP0818 de 50 W](https://stonetaskin.com/products/high-quality-diy-universal-driver-board-50w-current-board-dz-lp0818-resolve-the-panel-brightness-problem-lm270qq1-lm270qq2-1?variant=45363844120730) | 36,30 $ |
 | Divisor de barril, convertidor reductor de 24 V a 12 V, kit de conectores JST (Amazon.es) | unos 25 € |
-| Controlador Noctua NA-FC1 y adaptadores NA-RC7 | ya los tenía |
+| Dos resistencias de 180 ohmios y 2 A para el ventilador de la R1811 | 0,50 € |
+| Controlador Noctua NA-FC1 | ya lo tenía |
 
 Pongamos 450 euros por una pantalla 5K. Un monitor 5K nuevo empieza en cuatro veces eso.
 
@@ -183,9 +184,9 @@ Usar el Spyder5 fue un suplicio porque ya no tiene soporte y el software no func
 
 ## Silenciar el ventilador de la R1811
 
-Para bajar el ruido del ventilador añadí resistencia para reducir su tensión. Tenía dos [adaptadores Noctua NA-RC7 Low-Noise](https://noctua.at/en/na-src7) y los conecté en serie con el ventilador usando conectores JST XH-2P de [este kit](https://www.amazon.es/dp/B0CKSJPVZF). Necesito JST para otro proyecto, así que esto fue práctica. Tengo los dedos gordos y la vista mala.
+Para bajar el ruido del ventilador añadí resistencia para reducir su tensión. Primero con dos [adaptadores Noctua NA-RC7 Low-Noise](https://noctua.at/en/na-src7) que tenía por casa, conectados en serie con el ventilador usando conectores JST XH-2P de [este kit](https://www.amazon.es/dp/B0CKSJPVZF). Eso es lo que sale en la foto. Después sustituí los adaptadores Noctua por dos resistencias de 180 ohmios y 2 A, a 25 céntimos cada una, cableadas igual. Necesito JST para otro proyecto, así que esto fue práctica. Tengo los dedos gordos y la vista mala.
 
-{{< figure src="img/board-fan-resistors.jpg" alt="El ventilador de la placa R1811 con dos adaptadores Noctua de bajo ruido empalmados con conectores JST" caption="El ventilador de la R1811 con las resistencias empalmadas. Amarillo y rojo son positivo, negro es masa." >}}
+{{< figure src="img/board-fan-resistors.jpg" alt="El ventilador de la placa R1811 con dos adaptadores Noctua de bajo ruido empalmados con conectores JST" caption="El ventilador de la R1811 con los adaptadores Noctua empalmados; las resistencias de 180 ohmios fueron después al mismo sitio. Amarillo y rojo son positivo, negro es masa." >}}
 
 Ahora el ventilador es casi silencioso.
 
@@ -229,6 +230,6 @@ Un iMac 5K de 27 pulgadas muerto es un panel de 120 euros con caja gratis, y por
 - [El proyecto R9A18 de @Kaeslin (#1409)](https://forums.macrumors.com/threads/diy-5k-monitor-success.2253100/page-57#post-32247683)
 - [Guía de iFixit para sustituir la placa lógica](https://www.ifixit.com/Guide/iMac+Intel+27-Inch+Retina+5K+Display+Logic+Board+Replacement/30529)
 - [Stonetaskin](https://stonetaskin.com), el vendedor de las placas
-- Controlador [Noctua NA-FC1](https://noctua.at/en/na-fc1) y adaptadores [NA-RC7](https://noctua.at/en/na-src7)
+- Controlador [Noctua NA-FC1](https://noctua.at/en/na-fc1)
 - [Cable Ugreen USB-C a DisplayPort 1.4](https://www.ugreen.com/products/usb-c-to-displayport-8k-cable), probado por muchos en el hilo
 - La guía original: [kurtshuler/imac-5k-monitor-conversion](https://github.com/kurtshuler/imac-5k-monitor-conversion) en GitHub
