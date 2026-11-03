@@ -64,7 +64,7 @@ With the iMac bought and the panel identified, I had to choose a driver board an
    - The *Mac to CalDigit dock to Thunderbolt cable to monitor* configuration still needs testing.
 4. **Silent.**
    - **I kept the iMac's internal case fan.** The case was designed to pull air in through the back with the centrifugal fan and push it out the bottom, which helps cool every board inside. The cons: it needs a 24 V to 12 V step-down converter, and it limits where the R1811 can go if the inputs are to stay accessible. I already had a [Noctua NA-FC1](https://noctua.at/en/na-fc1) fan controller to dial the RPM down to silent.
-   - **The R1811's own fan gets a resistor.** The board ships with a fan that people find noisy. I tested [Noctua NA-RC7 Low-Noise Adaptors](https://noctua.at/en/na-src7) from another project and they work; I have 180 ohm 2 A resistors on order from AliExpress to replace them.
+   - **The R1811's own fan gets a resistor.** The board ships with a fan that people find noisy. I tested [Noctua NA-RC7 Low-Noise Adaptors](https://noctua.at/en/na-src7) from another project and they work; I used 180 ohm 2 A resistors that I have on hand to replace them.
    - **External power supply**, so it does not heat the inside of the case. Stonetaskin's is **24 V 5 A** with a **5.5 mm / 2.5 mm barrel plug**. Charging a laptop through USB-C PD would need more amperage, and I do not want that anyway.
 5. **IR remote.** I hate reaching around a display to change settings. I want a remote I can point at the front to reach the driver board's OSD.
 

@@ -64,7 +64,7 @@ Con el iMac comprado y el panel identificado, tocaba elegir la placa controlador
    - La configuración *Mac, dock CalDigit, cable Thunderbolt, monitor* sigue pendiente de probar.
 4. **Silencioso.**
    - **Conservé el ventilador interno del iMac.** La caja está diseñada para aspirar aire por detrás con el ventilador centrífugo y expulsarlo por abajo, lo que ayuda a refrigerar todas las placas. Las pegas: necesita un convertidor reductor de 24 V a 12 V, y limita dónde poner la R1811 si quiero las entradas accesibles. Ya tenía un controlador de ventilador [Noctua NA-FC1](https://noctua.at/en/na-fc1) para bajar las revoluciones hasta el silencio.
-   - **El ventilador de la R1811 lleva resistencia.** La placa viene con un ventilador que la gente encuentra ruidoso. Probé unos [adaptadores Noctua NA-RC7 Low-Noise](https://noctua.at/en/na-src7) de otro proyecto y funcionan; tengo pedidas en AliExpress resistencias de 180 ohmios y 2 A para sustituirlos.
+   - **El ventilador de la R1811 lleva resistencia.** La placa viene con un ventilador que la gente encuentra ruidoso. Probé unos [adaptadores Noctua NA-RC7 Low-Noise](https://noctua.at/en/na-src7) de otro proyecto y funcionan; los sustituí por resistencias de 180 ohmios y 2 A que tenía a mano.
    - **Fuente de alimentación externa**, para que no caliente el interior de la caja. La de Stonetaskin es de **24 V y 5 A** con conector de barril de **5,5 mm / 2,5 mm**. Cargar un portátil por USB-C PD necesitaría más amperaje, y de todos modos no lo quiero.
 5. **Mando a distancia IR.** Odio tener que meter la mano por detrás de un monitor para cambiar ajustes. Quiero un mando que apunte al frente para llegar al OSD de la placa.
 
