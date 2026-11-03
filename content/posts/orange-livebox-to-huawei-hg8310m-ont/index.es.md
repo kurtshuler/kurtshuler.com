@@ -35,9 +35,9 @@ Lo que ganas:
 - Ningún equipo controlado por el operador dentro de tu perímetro. Sin gestión remota TR-069, sin firmware sorpresa, sin radios que no has encendido tú.
 - Una balda del armario con mucho más sitio. ¡Este era mi motivo número uno!
 
-{{< figure src="img/12-closet-before.jpg" alt="Armario de red antes: un Livebox 6 de pie sobre un pequeño rack, encima de un NAS Synology, dos mini PC y un gateway UniFi" caption="Antes. El Livebox 6 de pie sobre el rack, el único sitio donde cabía, con su propia fuente y un cable bajando hasta el gateway." >}}
+{{< figure src="img/11-huawei-on-shelf.jpg" figureClass="fig-right fig-30" alt="El mismo armario después: una Huawei HG8310M del tamaño de una mano, tumbada en la balda junto a un mini PC" caption="Después. La HG8310M tiene el tamaño de una baraja de cartas y va tumbada en la balda. La parte de arriba del rack queda vacía." >}}
 
-{{< figure src="img/11-huawei-on-shelf.jpg" alt="El mismo armario después: una Huawei HG8310M del tamaño de una mano, tumbada en la balda junto a un mini PC" caption="Después. La HG8310M tiene el tamaño de una baraja de cartas y va tumbada en la balda. La parte de arriba del rack queda vacía." >}}
+{{< figure src="img/12-closet-before.jpg" figureClass="fig-right fig-30" alt="Armario de red antes: un Livebox 6 de pie sobre un pequeño rack, encima de un NAS Synology, dos mini PC y un gateway UniFi" caption="Antes. El Livebox 6 de pie sobre el rack, el único sitio donde cabía, con su propia fuente y un cable bajando hasta el gateway." >}}
 
 Lo que pierdes:
 
@@ -87,7 +87,7 @@ Tres valores, todos en la interfaz de administración del Livebox en `192.168.1.
 
 {{< figure src="img/00-livebox-fibra-ploam.jpg" alt="Página de administración del Livebox Fibra, Parámetros del sistema, pestaña FIBRA, con la fila 2.7 contraseña de ONT señalada" caption="La página FIBRA del Livebox. La fila 2.7 es la contraseña PLOAM en sus dos formas; la 2.6, la potencia de recepción. Captura de un miembro de bandaancha, del [hilo sobre la PLOAM](https://bandaancha.eu/foros/sacar-clave-gpon-idont-ploam-password-1742394); los valores los difuminó el autor original." >}}
 
-{{< figure src="img/01-mac-static-ip-bench.jpg" alt="Ajustes de red de macOS con una IP manual 192.168.100.2 y máscara 255.255.255.0" caption="El montaje de banco: el portátil con la IP fija 192.168.100.2 para poder entrar en la interfaz web de la ONT en 192.168.100.1." >}}
+{{< figure src="img/01-mac-static-ip-bench.jpg" figureClass="fig-right fig-40" alt="Ajustes de red de macOS con una IP manual 192.168.100.2 y máscara 255.255.255.0" caption="El montaje de banco: el portátil con la IP fija 192.168.100.2 para poder entrar en la interfaz web de la ONT en 192.168.100.1." >}}
 
 ## ¿Cómo me preparé?
 
@@ -122,6 +122,8 @@ Una cosa más que comprobar en el banco: el firmware de mi unidad (V3R015C10S106
 
 ## ¿Cómo se configura el router?
 
+{{< figure src="img/09-unifi-wan1-vlan-832.jpg" figureClass="fig-right fig-30" alt="Panel de ajustes de Internet 1 en UniFi con VLAN ID activado y puesto a 832, QoS Tag y MAC Address Clone sin marcar, conexión IPv4 DHCP" caption="Toda la configuración del lado del router en un gateway UniFi: VLAN ID 832, nada más marcado, DHCP." >}}
+
 Yo tengo un UniFi Dream Machine Pro Max, así que estos son campos de UniFi, pero cualquier router serio tiene los mismos cuatro ajustes.
 
 *Settings > Internet > tu WAN*:
@@ -138,8 +140,6 @@ Yo tengo un UniFi Dream Machine Pro Max, así que estos son campos de UniFi, per
 “*Ninguno*” en los dos campos de prioridad es lo correcto. Una etiqueta enviada sin prioridad explícita lleva 802.1p 0, que es exactamente lo que quiere Orange España. No pongas nada en el QoS tag: se aplica a todo el tráfico de salida y hay informes de un UDM cayendo a 30 Mbps con ese campo puesto. Si usas OPNsense en vez de UniFi, [este hilo de bandaancha](https://bandaancha.eu/foros/opnsense-orange-ftth-espana-ont-propia-1758841) y [este del foro de OPNsense](https://forum.opnsense.org/index.php?topic=50206.0) cubren la misma configuración de la VLAN 832, el segundo incluyendo la VLAN de televisión para un descodificador.
 
 Puedes hacer esto con el Livebox todavía en servicio si configuras un puerto libre del router como segunda WAN, lo que convierte la noche del cambio en mover un cable. Yo lo hice de la forma simple, en la WAN principal, durante el corte.
-
-{{< figure src="img/09-unifi-wan1-vlan-832.jpg" alt="Panel de ajustes de Internet 1 en UniFi con VLAN ID activado y puesto a 832, QoS Tag y MAC Address Clone sin marcar, conexión IPv4 DHCP" caption="Toda la configuración del lado del router en un gateway UniFi: VLAN ID 832, nada más marcado, DHCP." >}}
 
 ## ¿Cómo es el cambio en sí?
 

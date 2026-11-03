@@ -52,3 +52,15 @@ article:has(#background-image) .pointer-events-none.fixed::after {
   color: rgba(255, 255, 255, 0.55);
   pointer-events: none;
 }
+
+/* Floated figures for posts. Use on the figure shortcode: figureClass="fig-right fig-40".
+   Full width on phones; floats only from the md breakpoint. Headings clear floats. */
+@media (min-width: 768px) {
+  .fig-right { float: right; margin: 0.25rem 0 1rem 1.5rem; }
+  .fig-left  { float: left;  margin: 0.25rem 1.5rem 1rem 0; }
+  .fig-30 { width: 30%; }
+  .fig-40 { width: 40%; }
+  .fig-50 { width: 50%; }
+}
+.fig-right img, .fig-left img { width: 100%; height: auto; }
+.prose h2, .prose h3 { clear: both; }

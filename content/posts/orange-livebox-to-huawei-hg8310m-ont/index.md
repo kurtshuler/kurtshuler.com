@@ -35,9 +35,9 @@ What you gain:
 - No ISP-controlled device inside your perimeter. No TR-069 remote management, no surprise firmware, no radios you did not turn on.
 - A server closet shelf with a lot more space. This was my number one reason!
 
-{{< figure src="img/12-closet-before.jpg" alt="Network closet before: a Livebox 6 standing upright on top of a small rack above a Synology NAS, two mini PCs and a UniFi gateway" caption="Before. The Livebox 6 standing on top of the rack, the only place it fit, with its own power brick and a cable run down to the gateway." >}}
+{{< figure src="img/11-huawei-on-shelf.jpg" figureClass="fig-right fig-30" alt="The same closet after: a palm-sized Huawei HG8310M lying flat on the shelf next to a mini PC" caption="After. The HG8310M is the size of a deck of cards and lies flat on the shelf. The top of the rack is empty." >}}
 
-{{< figure src="img/11-huawei-on-shelf.jpg" alt="The same closet after: a palm-sized Huawei HG8310M lying flat on the shelf next to a mini PC" caption="After. The HG8310M is the size of a deck of cards and lies flat on the shelf. The top of the rack is empty." >}}
+{{< figure src="img/12-closet-before.jpg" figureClass="fig-right fig-30" alt="Network closet before: a Livebox 6 standing upright on top of a small rack above a Synology NAS, two mini PCs and a UniFi gateway" caption="Before. The Livebox 6 standing on top of the rack, the only place it fit, with its own power brick and a cable run down to the gateway." >}}
 
 What you lose:
 
@@ -87,7 +87,7 @@ Three values, all in the Livebox admin UI at `192.168.1.1`:
 
 {{< figure src="img/00-livebox-fibra-ploam.jpg" alt="Livebox Fibra admin page, Parámetros del sistema, FIBRA tab, with row 2.7 contraseña de ONT highlighted" caption="The Livebox FIBRA page. Row 2.7 is the PLOAM password in both forms, row 2.6 the receive power. Screenshot by a bandaancha member, from [the PLOAM thread](https://bandaancha.eu/foros/sacar-clave-gpon-idont-ploam-password-1742394); values blurred by the original poster." >}}
 
-{{< figure src="img/01-mac-static-ip-bench.jpg" alt="macOS network settings with a manual IP of 192.168.100.2 and subnet 255.255.255.0" caption="The bench setup: the laptop on a static 192.168.100.2 so it can reach the ONT's web UI at 192.168.100.1." >}}
+{{< figure src="img/01-mac-static-ip-bench.jpg" figureClass="fig-right fig-40" alt="macOS network settings with a manual IP of 192.168.100.2 and subnet 255.255.255.0" caption="The bench setup: the laptop on a static 192.168.100.2 so it can reach the ONT's web UI at 192.168.100.1." >}}
 
 ## How did I prepare before I started?
 
@@ -123,6 +123,8 @@ One more thing to check on the bench: my unit's firmware (V3R015C10S106) has fou
 
 ## How do you configure the router?
 
+{{< figure src="img/09-unifi-wan1-vlan-832.jpg" figureClass="fig-right fig-30" alt="UniFi Internet 1 settings panel with VLAN ID enabled and set to 832, QoS Tag and MAC Address Clone unticked, IPv4 connection DHCP" caption="The whole router-side configuration on a UniFi gateway: VLAN ID 832, nothing else ticked, DHCP." >}}
+
 I run a UniFi Dream Machine Pro Max, so these are UniFi fields, but every serious router has the same four settings.
 
 *Settings > Internet > your WAN*:
@@ -139,8 +141,6 @@ I run a UniFi Dream Machine Pro Max, so these are UniFi fields, but every seriou
 "*None*" on the two priority fields is correct. A tag sent without an explicit priority carries 802.1p 0, which is exactly what Orange España wants. Do not set the QoS tag to anything; it applies to all egress traffic and there are reports of a UDM dropping to 30 Mbps with it set. If you run OPNsense instead of UniFi, [this bandaancha thread](https://bandaancha.eu/foros/opnsense-orange-ftth-espana-ont-propia-1758841) and [this OPNsense forum thread](https://forum.opnsense.org/index.php?topic=50206.0) cover the same VLAN 832 setup, the second one including the TV VLAN for a decoder.
 
 You can do this while the Livebox is still live if you configure a spare router port as a second WAN, which turns the swap night into a cable move. I did it the simple way, on the primary WAN, during the outage.
-
-{{< figure src="img/09-unifi-wan1-vlan-832.jpg" alt="UniFi Internet 1 settings panel with VLAN ID enabled and set to 832, QoS Tag and MAC Address Clone unticked, IPv4 connection DHCP" caption="The whole router-side configuration on a UniFi gateway: VLAN ID 832, nothing else ticked, DHCP." >}}
 
 ## What does the swap itself look like?
 
