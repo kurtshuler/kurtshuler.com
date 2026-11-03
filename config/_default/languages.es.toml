@@ -19,5 +19,6 @@ title = "Kurt Shuler"
   headline = "Ingeniero, maker e inmigrante en Valencia"
   bio = "Teniente coronel retirado de la USAF y ex directivo del sector de semiconductores. Escribo sobre mi homelab, la burocracia española y lo que construyo."
   links = [
+    { linkedin = "https://www.linkedin.com/in/kurtshuler/" },
     { github = "https://github.com/kurtshuler" },
   ]

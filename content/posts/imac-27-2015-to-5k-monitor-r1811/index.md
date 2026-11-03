@@ -4,12 +4,6 @@ slug: "imac-27-2015-to-5k-monitor-r1811"
 date: 2025-09-02
 lastmod: 2026-11-03
 draft: false
-# Staging: reachable by URL, hidden from lists, feeds and sitemap. Remove this block to publish.
-build:
-  list: never
-  render: always
-sitemap:
-  disable: true
 description: "How I converted a 120 euro 2015 iMac 27 (A1419) with a dead logic board into a 5K monitor with a Stonetaskin R1811 driver board, including the mistakes, the flicker trap with USB-C power, and what it all cost."
 summary: "I bought a Late 2015 iMac 27 with a dead logic board for 120 euros on Wallapop and turned it into a 5K monitor with an R1811 driver board, saving at least 1,000 euros over a new 5K display. Written as I went, failures included: the recessed T8 screw, the backlight cable orientation, the USB-C power flicker, and the pink edges on 2015 panels."
 tags: ["imac", "5k", "r1811", "monitor", "diy", "3d-printing"]

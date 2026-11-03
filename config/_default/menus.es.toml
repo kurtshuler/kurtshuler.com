@@ -25,3 +25,14 @@
   name = "Etiquetas"
   pageRef = "tags"
   weight = 10
+
+[[footer]]
+  name = "LinkedIn"
+  url = "https://www.linkedin.com/in/kurtshuler/"
+  pre = "linkedin"
+  weight = 20
+[[footer]]
+  name = "GitHub"
+  url = "https://github.com/kurtshuler"
+  pre = "github"
+  weight = 30

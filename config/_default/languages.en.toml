@@ -19,5 +19,6 @@ title = "Kurt Shuler"
   headline = "Engineer, maker, immigrant in Valencia"
   bio = "Retired USAF officer and semiconductor executive. I write about my homelab, Spanish bureaucracy, and the things I build."
   links = [
+    { linkedin = "https://www.linkedin.com/in/kurtshuler/" },
     { github = "https://github.com/kurtshuler" },
   ]
