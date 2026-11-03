@@ -1,4 +1,5 @@
 ---
+imagePosition: "50% 30%"
 title: "Kurt Shuler"
 description: "Guías de homelab, la vida en Valencia, trámites en España y cosas hechas en el taller."
 ---

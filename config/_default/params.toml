@@ -13,6 +13,7 @@ mainSections = ["posts"]
 disableImageOptimization = false
 defaultBackgroundImage = "img/cover-fallas-wide.jpg"
 defaultSocialImage = "/social.jpg"
+backgroundImageWidth = 2400
 
 [header]
   layout = "fixed"

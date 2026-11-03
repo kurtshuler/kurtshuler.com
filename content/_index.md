@@ -1,4 +1,5 @@
 ---
+imagePosition: "50% 30%"
 title: "Kurt Shuler"
 description: "Homelab how-tos, life in Valencia, Spanish paperwork, and things made in the workshop."
 ---

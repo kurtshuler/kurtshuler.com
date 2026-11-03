@@ -1,0 +1,11 @@
+/* Site overrides. Blowfish loads this file automatically after its own CSS. */
+
+/* Homepage background layout: the theme stacks two dark gradient overlays on
+   the background photo, which turns a night photo into a flat grey wash.
+   Lighten them so the picture stays recognisable while the text stays legible. */
+#background-image + div {
+  opacity: 0.55;
+}
+#background-image + div + div {
+  opacity: 0.15;
+}
