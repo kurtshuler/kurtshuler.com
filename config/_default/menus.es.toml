@@ -1,0 +1,27 @@
+[[main]]
+  name = "Entradas"
+  pageRef = "posts"
+  weight = 10
+[[main]]
+  name = "Etiquetas"
+  pageRef = "tags"
+  weight = 20
+[[main]]
+  name = "Sobre mí"
+  pageRef = "about"
+  weight = 30
+[[main]]
+  identifier = "search"
+  weight = 90
+  [main.params]
+    action = "search"
+[[main]]
+  identifier = "locale"
+  weight = 91
+  [main.params]
+    action = "locale"
+
+[[footer]]
+  name = "Etiquetas"
+  pageRef = "tags"
+  weight = 10

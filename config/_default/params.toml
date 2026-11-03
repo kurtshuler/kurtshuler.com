@@ -1,0 +1,67 @@
+# Blowfish theme options. Only values that differ from the theme defaults are set here,
+# so a diff against themes/blowfish/config/_default/params.toml shows exactly what we changed.
+# Reference: https://blowfish.page/docs/configuration/#theme-parameters
+
+colorScheme = "ocean"
+defaultAppearance = "light"
+autoSwitchAppearance = true
+
+enableSearch = true
+enableCodeCopy = true
+
+mainSections = ["posts"]
+disableImageOptimization = false
+
+[header]
+  layout = "fixed"
+
+[footer]
+  showMenu = true
+  showCopyright = true
+  showThemeAttribution = true
+  showAppearanceSwitcher = true
+  showScrollToTop = true
+
+[homepage]
+  layout = "profile"       # review candidates in step 3: profile, hero, background, card
+  showRecent = true
+  showRecentItems = 6
+  showMoreLink = true
+  showMoreLinkDest = "/posts/"
+  cardView = true
+  cardViewScreenWidth = false
+
+[article]
+  showDate = true
+  showDateUpdated = true
+  showAuthor = false
+  showHero = true
+  heroStyle = "basic"
+  showBreadcrumbs = true
+  showHeadingAnchors = true
+  showPagination = true
+  showReadingTime = true
+  showReadingProgress = true
+  showTableOfContents = true
+  showRelatedContent = true
+  relatedContentLimit = 3
+  showTaxonomies = true
+  showWordCount = false
+  showEdit = false
+  sharingLinks = ["linkedin", "email", "whatsapp"]
+
+[list]
+  showBreadcrumbs = true
+  showSummary = true
+  showCards = true
+  cardView = true
+  groupByYear = true
+
+[sitemap]
+  excludedKinds = ["taxonomy", "term"]
+
+[taxonomy]
+  showTermCount = true
+
+[term]
+  cardView = true

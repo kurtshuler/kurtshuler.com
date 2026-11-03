@@ -1,0 +1,22 @@
+disabled = false
+locale = "es-ES"
+label = "Español"
+contentDir = "content"
+weight = 2
+title = "Kurt Shuler"
+
+[params]
+  displayName = "ES"
+  isoCode = "es"
+  rtl = false
+  dateFormat = "2 de January de 2006"
+  description = "Guías de homelab, la vida en Valencia, trámites en España y cosas hechas en el taller."
+  copyright = "Kurt Shuler"
+
+[params.author]
+  name = "Kurt Shuler"
+  headline = "Ingeniero, maker y expatriado en Valencia"
+  bio = "Teniente coronel retirado de la USAF y ex directivo del sector de semiconductores. Escribo sobre mi homelab, la burocracia española y lo que construyo."
+  links = [
+    { github = "https://github.com/kurtshuler" },
+  ]
