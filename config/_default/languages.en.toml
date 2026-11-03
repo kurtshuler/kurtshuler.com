@@ -14,6 +14,7 @@ title = "Kurt Shuler"
   copyright = "Kurt Shuler"
 
 [params.author]
+  image = "img/author.jpg"
   name = "Kurt Shuler"
   headline = "Engineer, maker, expat in Valencia"
   bio = "Retired USAF officer and semiconductor executive. I write about my homelab, Spanish bureaucracy, and the things I build."

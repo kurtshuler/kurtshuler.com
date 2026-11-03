@@ -3,14 +3,16 @@
 # Reference: https://blowfish.page/docs/configuration/#theme-parameters
 
 colorScheme = "ocean"
-defaultAppearance = "light"
-autoSwitchAppearance = true
+defaultAppearance = "dark"
+autoSwitchAppearance = false   # night-sky background looks washed out in light mode; visitors can still toggle
 
 enableSearch = true
 enableCodeCopy = true
 
 mainSections = ["posts"]
 disableImageOptimization = false
+defaultBackgroundImage = "img/cover-fallas-wide.jpg"
+defaultSocialImage = "/social.jpg"
 
 [header]
   layout = "fixed"
@@ -23,7 +25,9 @@ disableImageOptimization = false
   showScrollToTop = true
 
 [homepage]
-  layout = "profile"       # review candidates in step 3: profile, hero, background, card
+  layout = "background"          # review candidates in step 3: profile, hero, background, card
+  homepageImage = "img/cover-fallas.jpg"
+  disableHeroImageFilter = false
   showRecent = true
   showRecentItems = 6
   showMoreLink = true
