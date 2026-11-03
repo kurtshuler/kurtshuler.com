@@ -4,12 +4,6 @@ slug: "orange-livebox-to-huawei-hg8310m-ont"
 date: 2026-11-02
 lastmod: 2026-11-03
 draft: false
-# Staging: reachable by URL, hidden from lists, feeds and sitemap. Remove this block to publish.
-build:
-  list: never
-  render: always
-sitemap:
-  disable: true
 description: "Cómo quitar el Livebox 6 de Orange España de tu red y conectar tu propio router directamente a la fibra con una ONT Huawei HG8310M de 15 euros. Qué copiar del Livebox, el ajuste que me hizo perder un intento de registro y los números de antes y de después."
 summary: "Saqué el Livebox de Orange de mi armario de red y puse en su lugar una ONT Huawei HG8310M de 15 euros, con un gateway UniFi haciendo de router. Aquí tienes lo que hay que copiar del Livebox antes de desenchufarlo, el ajuste de autenticación que me costó un intento de registro y los números de antes y de después."
 tags: ["fiber", "orange", "unifi", "ont", "livebox"]

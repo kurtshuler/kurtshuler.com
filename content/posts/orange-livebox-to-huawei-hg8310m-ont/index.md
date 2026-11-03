@@ -4,12 +4,6 @@ slug: "orange-livebox-to-huawei-hg8310m-ont"
 date: 2026-11-02
 lastmod: 2026-11-03
 draft: false
-# Staging: reachable by URL, hidden from lists, feeds and sitemap. Remove this block to publish.
-build:
-  list: never
-  render: always
-sitemap:
-  disable: true
 description: "How to take the Orange España Livebox 6 out of your network and run your own router directly on the fiber with a 15 euro Huawei HG8310M ONT. What to copy from the Livebox, the one setting that bit me, and the numbers before and after."
 summary: "I took the Orange Livebox out of my network closet and put a 15 euro Huawei HG8310M ONT in its place, with a UniFi gateway doing the routing. Here is what you need to copy from the Livebox before you unplug it, the one authentication setting that cost me a registration attempt, and the before and after numbers."
 tags: ["fiber", "orange", "unifi", "ont", "livebox"]
