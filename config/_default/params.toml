@@ -27,7 +27,7 @@ backgroundImageWidth = 2400
 
 [homepage]
   layout = "background"          # review candidates in step 3: profile, hero, background, card
-  homepageImage = "img/cover-fallas.jpg"
+  homepageImage = "img/cover-aerial.jpg"   # Google Earth render; attribution rendered by custom.css
   disableHeroImageFilter = false
   showRecent = true
   showRecentItems = 6

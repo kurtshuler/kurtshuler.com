@@ -37,3 +37,18 @@ article:has(#background-image) .relative.z-10 h2 { font-size: 1.05rem; }
 article:has(#background-image) .relative.z-10 h2 + div { margin-top: 0.4rem; margin-bottom: 0.75rem; font-size: 1.25rem; }
 article:has(#background-image) .relative.z-10 section.prose { max-width: 42rem; }
 article:has(#background-image) .relative.z-10 section.prose p { margin: 0 0 0.5rem; font-size: 0.95rem; line-height: 1.45; }
+
+/* Imagery attribution for the Google Earth banner (required by Google's Geo Guidelines). */
+article:has(#background-image) .pointer-events-none.fixed {
+  position: fixed;
+}
+article:has(#background-image) .pointer-events-none.fixed::after {
+  content: "Imagery \00a9 2026 Google";
+  position: absolute;
+  right: 0.75rem;
+  bottom: 0.35rem;
+  font-size: 0.7rem;
+  line-height: 1;
+  color: rgba(255, 255, 255, 0.55);
+  pointer-events: none;
+}
