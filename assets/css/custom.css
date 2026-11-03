@@ -9,3 +9,21 @@
 #background-image + div + div {
   opacity: 0.15;
 }
+
+/* Cap the background band at roughly a third of the viewport instead of the
+   theme's fixed 1000px, so the photo is a banner and the page below is plain. */
+#background-image,
+#background-image + div,
+#background-image + div + div {
+  height: 36vh;
+  min-height: 300px;
+  max-height: 520px;
+}
+
+/* Fade the bottom of the banner into the page instead of a hard edge. */
+#background-image,
+#background-image + div,
+#background-image + div + div {
+  -webkit-mask-image: linear-gradient(to bottom, black 55%, transparent 100%);
+  mask-image: linear-gradient(to bottom, black 55%, transparent 100%);
+}
