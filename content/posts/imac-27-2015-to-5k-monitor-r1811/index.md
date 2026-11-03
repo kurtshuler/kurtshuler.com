@@ -8,6 +8,7 @@ description: "How I converted a 120 euro 2015 iMac 27 (A1419) with a dead logic 
 summary: "I bought a Late 2015 iMac 27 with a dead logic board for 120 euros on Wallapop and turned it into a 5K monitor with an R1811 driver board, saving at least 1,000 euros over a new 5K display. Written as I went, failures included: the recessed T8 screw, the backlight cable orientation, the USB-C power flicker, and the pink edges on 2015 panels."
 tags: ["imac", "5k", "r1811", "monitor", "diy", "3d-printing"]
 categories: ["Making"]
+series: ["Homelab"]
 showTableOfContents: true
 showHero: false
 ---

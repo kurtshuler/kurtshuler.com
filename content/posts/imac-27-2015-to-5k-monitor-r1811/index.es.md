@@ -8,6 +8,7 @@ description: "Cómo convertí un iMac 27 de 2015 (A1419) con la placa lógica mu
 summary: "Compré en Wallapop un iMac 27 de finales de 2015 con la placa lógica muerta por 120 euros y lo convertí en un monitor 5K con una placa controladora R1811, ahorrándome al menos 1.000 euros frente a un monitor 5K nuevo. Escrito sobre la marcha, con los fallos: el tornillo T8 escondido, la orientación del cable de retroiluminación, el parpadeo con alimentación USB-C y los bordes rosas de los paneles de 2015."
 tags: ["imac", "5k", "r1811", "monitor", "diy", "3d-printing"]
 categories: ["Making"]
+series: ["Homelab"]
 showTableOfContents: true
 showHero: false
 ---
