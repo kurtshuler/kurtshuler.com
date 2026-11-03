@@ -87,8 +87,6 @@ Three values, all in the Livebox admin UI at `192.168.1.1`:
 
 {{< figure src="img/00-livebox-fibra-ploam.jpg" alt="Livebox Fibra admin page, Parámetros del sistema, FIBRA tab, with row 2.7 contraseña de ONT highlighted" caption="The Livebox FIBRA page. Row 2.7 is the PLOAM password in both forms, row 2.6 the receive power. Screenshot by a bandaancha member, from [the PLOAM thread](https://bandaancha.eu/foros/sacar-clave-gpon-idont-ploam-password-1742394); values blurred by the original poster." >}}
 
-{{< figure src="img/01-mac-static-ip-bench.jpg" figureClass="fig-right fig-40" alt="macOS network settings with a manual IP of 192.168.100.2 and subnet 255.255.255.0" caption="The bench setup: the laptop on a static 192.168.100.2 so it can reach the ONT's web UI at 192.168.100.1." >}}
-
 ## How did I prepare before I started?
 
 - A laptop set to a static address for the ONT's bench network.
@@ -99,7 +97,10 @@ Three values, all in the Livebox admin UI at `192.168.1.1`:
 
 On the bench first, with the fiber still in the Livebox. 
 
-1. Connect a laptop to the Huawei's single Ethernet port, give the laptop a static IP of `192.168.100.2/24`, and browse to `http://192.168.100.1`. 
+1. Connect a laptop to the Huawei's single Ethernet port, give the laptop a static IP of `192.168.100.2/24`, and browse to `http://192.168.100.1`.
+
+   {{< figure src="img/01-mac-static-ip-bench.jpg" figureClass="fig-right fig-40" alt="macOS network settings with a manual IP of 192.168.100.2 and subnet 255.255.255.0" caption="The bench setup: the laptop on a static 192.168.100.2 so it can reach the ONT's web UI at 192.168.100.1." >}}
+
 2. Log into the Huawei page. There are no credentials printed on the unit. The defaults are `telecomadmin` / `admintelecom`, with `root` / `adminHG` as the fallback ([hack-gpon.org](https://hack-gpon.org/ont-huawei-hg8010h/) keeps the list for the whole HG80xx family, and [maquinasvirtuales.eu](https://www.maquinasvirtuales.eu/ont-configurar-huawei-hg8010h/) has screenshots of the same web UI).
 
 {{< figure src="img/02-huawei-device-info-o1.jpg" alt="Huawei HG8310M Device Information page showing ONT Registration Status O1 (Initial state) and ONT ID 255" caption="Fresh out of the box on the bench, fiber not yet connected: registration status O1, ONT ID 255. Serial and product ID redacted." >}}

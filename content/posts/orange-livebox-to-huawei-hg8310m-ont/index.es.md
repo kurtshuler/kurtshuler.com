@@ -87,8 +87,6 @@ Tres valores, todos en la interfaz de administración del Livebox en `192.168.1.
 
 {{< figure src="img/00-livebox-fibra-ploam.jpg" alt="Página de administración del Livebox Fibra, Parámetros del sistema, pestaña FIBRA, con la fila 2.7 contraseña de ONT señalada" caption="La página FIBRA del Livebox. La fila 2.7 es la contraseña PLOAM en sus dos formas; la 2.6, la potencia de recepción. Captura de un miembro de bandaancha, del [hilo sobre la PLOAM](https://bandaancha.eu/foros/sacar-clave-gpon-idont-ploam-password-1742394); los valores los difuminó el autor original." >}}
 
-{{< figure src="img/01-mac-static-ip-bench.jpg" figureClass="fig-right fig-40" alt="Ajustes de red de macOS con una IP manual 192.168.100.2 y máscara 255.255.255.0" caption="El montaje de banco: el portátil con la IP fija 192.168.100.2 para poder entrar en la interfaz web de la ONT en 192.168.100.1." >}}
-
 ## ¿Cómo me preparé?
 
 - Un portátil con una dirección fija para la red de banco de la ONT.
@@ -100,6 +98,9 @@ Tres valores, todos en la interfaz de administración del Livebox en `192.168.1.
 Primero en el banco, con la fibra todavía en el Livebox.
 
 1. Conecta un portátil al único puerto Ethernet de la Huawei, ponle la IP fija `192.168.100.2/24` y abre `http://192.168.100.1`.
+
+   {{< figure src="img/01-mac-static-ip-bench.jpg" figureClass="fig-right fig-40" alt="Ajustes de red de macOS con una IP manual 192.168.100.2 y máscara 255.255.255.0" caption="El montaje de banco: el portátil con la IP fija 192.168.100.2 para poder entrar en la interfaz web de la ONT en 192.168.100.1." >}}
+
 2. Entra en la página de la Huawei. En el aparato no hay credenciales impresas. Las de fábrica son `telecomadmin` / `admintelecom`, y `root` / `adminHG` como alternativa ([hack-gpon.org](https://hack-gpon.org/ont-huawei-hg8010h/) mantiene la lista de toda la familia HG80xx, y [maquinasvirtuales.eu](https://www.maquinasvirtuales.eu/ont-configurar-huawei-hg8010h/) tiene capturas de la misma interfaz web).
 
 {{< figure src="img/02-huawei-device-info-o1.jpg" alt="Página Device Information de la Huawei HG8310M con ONT Registration Status O1 (Initial state) y ONT ID 255" caption="Recién sacada de la caja, en el banco y sin fibra: estado de registro O1, ONT ID 255. Número de serie e identificador de producto tapados." >}}
