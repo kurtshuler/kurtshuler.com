@@ -15,7 +15,7 @@
 #background-image,
 #background-image + div,
 #background-image + div + div {
-  height: 36vh;
+  height: 40vh;
   min-height: 300px;
   max-height: 520px;
 }
@@ -27,3 +27,13 @@
   -webkit-mask-image: linear-gradient(to bottom, black 55%, transparent 100%);
   mask-image: linear-gradient(to bottom, black 55%, transparent 100%);
 }
+
+/* Compact homepage intro so avatar, name, headline and bio all sit inside the banner.
+   Scoped to the homepage via the background image the layout renders there. */
+article:has(#background-image) .relative.z-10 { padding-top: 0.25rem; }
+article:has(#background-image) .relative.z-10 img.rounded-full { height: 5.5rem; width: 5.5rem; margin-bottom: 0.5rem; }
+article:has(#background-image) .relative.z-10 h1 { font-size: 2rem; line-height: 1.15; margin-bottom: 0.25rem; }
+article:has(#background-image) .relative.z-10 h2 { font-size: 1.05rem; }
+article:has(#background-image) .relative.z-10 h2 + div { margin-top: 0.4rem; margin-bottom: 0.75rem; font-size: 1.25rem; }
+article:has(#background-image) .relative.z-10 section.prose { max-width: 42rem; }
+article:has(#background-image) .relative.z-10 section.prose p { margin: 0 0 0.5rem; font-size: 0.95rem; line-height: 1.45; }
