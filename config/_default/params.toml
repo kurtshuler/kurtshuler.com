@@ -33,7 +33,7 @@ backgroundImageWidth = 2400
   showRecentItems = 6
   showMoreLink = true
   showMoreLinkDest = "/posts/"
-  cardView = true
+  cardView = false
   cardViewScreenWidth = false
 
 [article]
@@ -59,7 +59,7 @@ backgroundImageWidth = 2400
   showBreadcrumbs = true
   showSummary = true
   showCards = true
-  cardView = true
+  cardView = false
   groupByYear = true
 
 [sitemap]
@@ -69,4 +69,4 @@ backgroundImageWidth = 2400
   showTermCount = true
 
 [term]
-  cardView = true
+  cardView = false
