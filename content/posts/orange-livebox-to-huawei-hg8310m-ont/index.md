@@ -14,7 +14,7 @@ description: "How to take the Orange España Livebox 6 out of your network and r
 summary: "I took the Orange Livebox out of my network closet and put a 15 euro Huawei HG8310M ONT in its place, with a UniFi gateway doing the routing. Here is what you need to copy from the Livebox before you unplug it, the one authentication setting that cost me a registration attempt, and the before and after numbers."
 tags: ["fiber", "orange", "unifi", "ont", "livebox"]
 categories: ["Homelab"]
-series: ["Orange España fiber"]
+series: ["Homelab"]
 showTableOfContents: true
 showHero: false
 ---

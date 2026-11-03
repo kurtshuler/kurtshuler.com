@@ -14,7 +14,7 @@ description: "Cómo quitar el Livebox 6 de Orange España de tu red y conectar t
 summary: "Saqué el Livebox de Orange de mi armario de red y puse en su lugar una ONT Huawei HG8310M de 15 euros, con un gateway UniFi haciendo de router. Aquí tienes lo que hay que copiar del Livebox antes de desenchufarlo, el ajuste de autenticación que me costó un intento de registro y los números de antes y de después."
 tags: ["fiber", "orange", "unifi", "ont", "livebox"]
 categories: ["Homelab"]
-series: ["Orange España fiber"]
+series: ["Homelab"]
 showTableOfContents: true
 showHero: false
 ---
