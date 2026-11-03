@@ -1,0 +1,20 @@
+{{- /* Two figures side by side. Usage:
+   {{< pair src1="img/a.jpg" alt1="..." cap1="..." src2="img/b.jpg" alt2="..." cap2="..." >}}
+   Stacks on narrow screens (see .fig-pair in assets/css/custom.css). */ -}}
+<div class="fig-pair">
+{{- range $i := slice "1" "2" }}
+  {{- $src := $.Get (print "src" $i) }}
+  {{- $alt := $.Get (print "alt" $i) }}
+  {{- $cap := $.Get (print "cap" $i) }}
+  {{- $r := $.Page.Resources.GetMatch $src }}
+  <figure>
+  {{- if $r }}
+    {{- $img := $r.Resize "900x q85" }}
+    <img class="my-0 rounded-md" loading="lazy" decoding="async" src="{{ $img.RelPermalink }}" alt="{{ $alt }}" width="{{ $img.Width }}" height="{{ $img.Height }}">
+  {{- else }}
+    <img class="my-0 rounded-md" loading="lazy" src="{{ $src }}" alt="{{ $alt }}">
+  {{- end }}
+  {{- with $cap }}<figcaption>{{ . | markdownify }}</figcaption>{{ end }}
+  </figure>
+{{- end }}
+</div>

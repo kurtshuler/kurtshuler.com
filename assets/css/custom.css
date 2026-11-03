@@ -60,7 +60,14 @@ article:has(#background-image) .pointer-events-none.fixed::after {
   .fig-left  { float: left;  margin: 0.25rem 1.5rem 1rem 0; }
   .fig-30 { width: 30%; }
   .fig-40 { width: 40%; }
+  .fig-48 { width: 48%; }
   .fig-50 { width: 50%; }
 }
 .fig-right img, .fig-left img { width: 100%; height: auto; }
 .prose h2, .prose h3 { clear: both; }
+
+/* Two figures side by side (pair shortcode). Stacks below the md breakpoint. */
+.fig-pair { display: flex; flex-direction: column; gap: 1rem; margin: 1.5rem 0; }
+.fig-pair figure { margin: 0; flex: 1 1 0; min-width: 0; }
+.fig-pair img { width: 100%; height: auto; }
+@media (min-width: 768px) { .fig-pair { flex-direction: row; align-items: flex-start; } }
