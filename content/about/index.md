@@ -10,7 +10,7 @@ I am Kurt Shuler, a retired US Air Force officer and semiconductor industry exec
 This blog exists because I keep solving the same kinds of problems and losing the notes. Expect posts on:
 
 - Homelab: Proxmox, UniFi, Home Assistant, Docker, and the odd fibre ONT.
-- Living in Spain: public healthcare sign-up, TIE renewals and other paperwork, from the point of view of an American expat.
+- Living in Spain: public healthcare sign-up, TIE renewals and other paperwork, from the point of view of an American immigrant who is here to stay.
 - Valencia and life in general.
 - Making things: 3D printing, woodworking and vintage watch repair.
 

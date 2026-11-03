@@ -10,7 +10,7 @@ Soy Kurt Shuler, teniente coronel retirado de la Fuerza Aérea de los Estados Un
 Este blog existe porque resuelvo una y otra vez el mismo tipo de problemas y luego pierdo los apuntes. Aquí encontrarás entradas sobre:
 
 - Homelab: Proxmox, UniFi, Home Assistant, Docker y alguna ONT de fibra.
-- Vivir en España: darse de alta en la sanidad pública, renovar la TIE y otros trámites, desde el punto de vista de un expatriado estadounidense.
+- Vivir en España: darse de alta en la sanidad pública, renovar la TIE y otros trámites, desde el punto de vista de un inmigrante estadounidense que ha venido para quedarse.
 - Valencia y la vida en general.
 - Hacer cosas: impresión 3D, carpintería y reparación de relojes antiguos.
 

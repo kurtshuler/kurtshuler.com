@@ -16,7 +16,7 @@ title = "Kurt Shuler"
 [params.author]
   image = "img/author.jpg"
   name = "Kurt Shuler"
-  headline = "Ingeniero, maker y expatriado en Valencia"
+  headline = "Ingeniero, maker e inmigrante en Valencia"
   bio = "Teniente coronel retirado de la USAF y ex directivo del sector de semiconductores. Escribo sobre mi homelab, la burocracia española y lo que construyo."
   links = [
     { github = "https://github.com/kurtshuler" },

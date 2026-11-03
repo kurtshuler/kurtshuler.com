@@ -16,7 +16,7 @@ title = "Kurt Shuler"
 [params.author]
   image = "img/author.jpg"
   name = "Kurt Shuler"
-  headline = "Engineer, maker, expat in Valencia"
+  headline = "Engineer, maker, immigrant in Valencia"
   bio = "Retired USAF officer and semiconductor executive. I write about my homelab, Spanish bureaucracy, and the things I build."
   links = [
     { github = "https://github.com/kurtshuler" },
